@@ -3,27 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024"
+    <meta name="viewport" content="width=1024">
     <title>Sheep Farm</title>
     <link rel="stylesheet" href="sheepfarm.css">
     <style>
-        body {
+        .wrapper {
             transform: rotate(90deg);
-    transform-origin:bottom left;
-    
-    position:absolute;
-    top: -100vw;
-    left: 0;
+            transform-origin: bottom left;
+
+            position: absolute;
+            top: -100vw;
+            left: 0;
+
+            height: 100vw;
+            width: 100vh;
+
+            background-color: #000;
+            color: #fff;
+
+            overflow: auto;
+
         }
     </style>
 </head>
 
 
 <body>
-
-    <iframe src='https://www.miniplay.com/embed/sheep-farm' style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%" frameborder='0'
-        allowfullscreen></iframe>
-
+    <div class="wrapper">
+        <iframe src='https://www.miniplay.com/embed/sheep-farm'
+            style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px"
+            height="100%" width="100%" frameborder='0' allowfullscreen></iframe>
+    </div>
 </body>
 
 </html>
