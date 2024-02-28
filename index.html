@@ -4,33 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Sheep Farm</title>
-    <link rel="stylesheet" href="sheepfarm.css">
-    <style>
-        .wrapper {
-            transform: rotate(90deg);
-            transform-origin: bottom left;
-
-            position: absolute;
-            top: -100vw;
-            left: 0;
-
-            height: 100vw;
-            width: 100vh;
-
-            background-color: #000;
-            color: #fff;
-
-            overflow: none;
-
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 
 
 <body>
-    <div class="wrapper">
-        <iframe src='https://www.miniplay.com/embed/sheep-farm' style='width:100%;height:100%;' frameborder='0'
-            allowfullscreen></iframe>
+
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Sheep Farm</button>
+    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Crypt Rider</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Stan Skates</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">Mission Mars</button>
+
+    <div id="Home" class="tabcontent">
+        <div class="wrapper">
+            <iframe src='https://www.miniplay.com/embed/sheep-farm' style='width:100%;height:100%;' frameborder='0'
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="News" class="tabcontent">
+
+        <iframe src=' https://www.play-games.com/iframe/20369.html' style='width:100%;height:100%;' frameborder='0'
+            id="rider" allowfullscreen></iframe>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+
+        <iframe src='https://www.play-games.com/embed/31573.html' style='width:100%;height:100%;' frameborder='0'
+            id="rider" allowfullscreen></iframe>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <iframe src=' https://www.play-games.com/iframe/32222.html' style='width:100%;height:100%;' frameborder='0'
+            id="rider" allowfullscreen></iframe>
     </div>
 </body>
 
